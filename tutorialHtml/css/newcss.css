@@ -1,0 +1,102 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    text-shadow: #FC0 1px 1px 10px;
+}
+
+nav {
+    background: #f4f4f4;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ol {
+    list-style: none;
+    padding: 0;
+    
+}
+
+nav ol li {
+    display: inline-block;
+    margin-right: 1rem;
+    position: relative; /* Necesario para el posicionamiento del submenu */
+   
+}
+
+nav ol li a {
+    color: #333;
+    text-decoration: none;
+       border-radius: 27px;
+}
+
+nav ol li:hover .submenu {
+    display: block; /* Muestra el submenu al pasar el ratón */
+ 
+}
+
+nav .submenu {
+    display: none; /* Oculta el submenu por defecto */
+    position: absolute;
+    top: 100%; /* Posiciona el submenu debajo del elemento principal */
+    left: 0;
+    background: #fff;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+}
+
+nav .submenu li {
+    margin: 0;
+}
+
+nav .submenu li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #333;
+    white-space: nowrap; /* Evita el salto de línea */
+}
+
+nav .submenu li a:hover {
+    background: #f4f4f4; /* Cambio de color de fondo al pasar el ratón por encima */
+}
+
+main {
+    padding: 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-shadow: #FC0 1px 1px 10px;
+}
+
